@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <!-- icons -->
+        <link rel="stylesheet" href="https://kit.fontawesome.com/077ac312fe.css" crossorigin="anonymous">
+
+    <style>
+               body{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(171, 165, 165);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .navigation .nav-link {
+            font-weight: 500;
+            margin-left: 10px;
+        }
+
+        .flex-column{
+          text-align: center;
+        }
+        .foot img{
+          border-radius: 50%;
+        }
+        #footer{
+            color: white;
+            font-size: large;
+        }
+        .contact{
+          font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+    <title>Minor</title>
+</head>
+
+<body>
+    <section class="navigation">
+        <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid" style="width: 90%;">
+              <img src="Images/Logo.png" class="img-fluid" style="height: 60px;width: 160px;">
+              <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-3 rounded" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link px-lg-3 rounded" href="Places.html">Places</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-3 rounded" href="Team.html">Team</a>
+                    </li>
+                    <li class="nav-item" id="hire">
+                        <a class="nav-link px-lg-3 rounded active bg-light" href="Contact.html" style="color: black;">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+    
+            </div>
+          </nav>
+    </section>
+
+    <section class="contact py-5">
+        <div class="container pt-5" style="width: 80%;">
+        <form>
+            <div class="col-8 mb-3">
+              <label for="Name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="Name" aria-describedby="textHelp">
+            </div>
+            <div class="col-8 mb-3">
+                <label for="Email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+            <div class="col-8 mb-3">
+                <textarea name="msg" id="" cols="30" rows="6" class="rounded" placeholder="Enter your message here..."></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contact">
+                Send
+              </button>
+          </form>
+        </div>
+    </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="contactLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="contactLabel">Message Notification</h1>
+        </div>
+        <div class="modal-body">
+          Your message sent succesfully.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="foot" id="footer" style="background-color: rgb(205, 140, 87);">
+    <div class="container" style="width: 90%;">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+        <div class="col mb-3">
+          <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <p class="text-muted"><img src="Images/Logo.png" class="img-fluid" style="height: 60px;width: 160px;"> ©2023</p>
+        </div>
+    
+        <div class="col mb-3">
+    
+        </div>
+    
+        <div class="col mb-3 text-center">
+          <h5>Follow us on:</h5>
+          <a href="#instagram"><img src="Images/L3_icon1.png" class="img-fluid" alt="..." style="height: 40px; width: 40px;"></a>
+          <a href="#facebook"><img src="Images/L3_icon2.webp" class="img-fluid" alt="..." style="height: 40px; width: 40px;"></a>
+          <a href="#twitter"><img src="Images/L3_icon3.webp" class="img-fluid" alt="..." style="height: 40px; width: 40px;"></a>
+        </div>
+    
+        <div class="col mb-3 text-center">
+          <h5>Get in touch with us:</h5>
+          <ul class="nav flex-column" style="font-weight: 500;width: max-content;">
+            <li class="nav-item mb-2"></li>
+            <li class="nav-item mb-2"><a href="Contact.html" class="nav-link p-0 text-muted"><i class="fa fa-envelope"></i> sanket.patil201@vit.edu</a></li>
+            <li class="nav-item mb-2"></li>
+            <li class="nav-item mb-2"><a href="Contact.html" class="nav-link p-0 text-muted"><i class="fa fa-envelope"></i> arati23543@gmail.com</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3 text-center">
+
+          <ul class="nav flex-column" style="font-weight: 500;">
+            <li class="nav-item mb-2"><a href="Home.html" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="Contact.html" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="Team.html" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    
+</section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+         <!-- icons -->
+         <script src="https://kit.fontawesome.com/077ac312fe.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
